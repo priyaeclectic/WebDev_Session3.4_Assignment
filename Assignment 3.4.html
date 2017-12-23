@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Assignment 3.4</title>
+</head>
+<style>
+div{								/*define size parameters and background for the form*/
+	height:200px;
+	width:200px;
+	background-image: url("https://thelymphielife.com/wp-content/uploads/2012/07/waves1.gif");
+}
+form{
+	font-family: cursive;
+}
+input[type=text]:enabled {
+    background: pink;
+}
+
+input[type=text]:disabled {
+    background: #dddddd;
+}
+input[type=submit]{					/*defines transparency for the button	*/
+	opacity: 0.6;
+	background-color: blue;
+	font-weight: 900;
+}
+</style>
+<body>
+<div>	
+<form method="get">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  Age: <input type="text" name="age" maxlength="2" min="16" max="60"><br>	<!--Max length of 2 defined. Min and Max values for the field are 16 and 60-->
+  Course: <input type="text" name="course" disabled="disabled"><br>			<!--Field disabled for input-->
+  <input type="submit" value="Submit">
+</form>
+</div>
+</body>
+</html>
